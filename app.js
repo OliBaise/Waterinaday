@@ -54,3 +54,10 @@ function calculateWaterIntake() {
     resultDiv.innerHTML = `Your daily water intake should be approximately <strong>${totalWaterLiters} liters</strong> (${totalWaterOunces} ounces).`;
     resultDiv.style.display = 'block';
 }
+
+console.log("Script loaded correctly");
+
+function calculateWaterIntake() {
+    console.log("Button clicked"); // Check if this appears in the console
+    // ... rest of the function code
+}
