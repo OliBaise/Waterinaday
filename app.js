@@ -1,5 +1,3 @@
-// JavaScript
-// script.js
 function calculateWaterIntake() {
     const weight = parseFloat(document.getElementById('weight').value);
     const weightUnit = document.getElementById('weight-unit').value;
@@ -18,10 +16,10 @@ function calculateWaterIntake() {
     const weightInKg = weightUnit === 'lbs' ? weight / 2.20462 : weight;
 
     // Calculate weight-based intake
-    const weightWaterMl = weightInKg * 33; // 33 ml per kg
+    const weightWaterMl = weightInKg * 33;
 
     // Calculate exercise-based intake
-    const exerciseWaterMl = Math.floor(exercise / 30) * 250; // 250 ml per 30 minutes
+    const exerciseWaterMl = Math.floor(exercise / 30) * 250;
 
     // Convert temperature to Celsius if in Fahrenheit
     const tempInCelsius = temperatureUnit === 'fahrenheit' 
