@@ -28,7 +28,7 @@ function calculateWaterIntake() {
 
     // Determine temperature multiplier
     let tempMultiplier = 1;
-    if (tempInCelsius < 0) tempMultiplier = 1.3;
+    else if (tempInCelsius < 0) tempMultiplier = 1.3;
     else if (tempInCelsius <= -5) tempMultiplier = 1.4;
     else if (tempInCelsius <= 5) tempMultiplier = 1.2;
     else if (tempInCelsius <= 10) tempMultiplier = 1.1;
