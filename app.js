@@ -38,7 +38,7 @@ function calculateWaterIntake() {
     else if (tempInCelsius <= 30) tempMultiplier = 1.4;
     else if (tempInCelsius <= 35) tempMultiplier = 1.6;
     else if (tempInCelsius <= 40) tempMultiplier = 1.8;
-    else tempMultiplier = 1.8;
+    else tempMultiplier = 2;
 
     // Calculate coffee and alcohol intake
     const coffeeWaterMl = coffee * 240; // 240 ml per coffee
