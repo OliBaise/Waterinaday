@@ -29,6 +29,7 @@ function calculateWaterIntake() {
     // Determine temperature multiplier
     let tempMultiplier = 1;
     if (tempInCelsius < 0) tempMultiplier = 1.3;
+    else if (tempInCelsius <= -5) tempMultiplier = 1.4;
     else if (tempInCelsius <= 5) tempMultiplier = 1.2;
     else if (tempInCelsius <= 10) tempMultiplier = 1.1;
     else if (tempInCelsius <= 15) tempMultiplier = 1.0;
@@ -36,6 +37,7 @@ function calculateWaterIntake() {
     else if (tempInCelsius <= 25) tempMultiplier = 1.2;
     else if (tempInCelsius <= 30) tempMultiplier = 1.4;
     else if (tempInCelsius <= 35) tempMultiplier = 1.6;
+    else if (tempInCelsius <= 40) tempMultiplier = 1.8;
     else tempMultiplier = 1.8;
 
     // Calculate coffee and alcohol intake
