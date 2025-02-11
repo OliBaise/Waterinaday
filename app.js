@@ -1,4 +1,6 @@
 function calculateWaterIntake() {
+    console.log("Button clicked!"); // Debugging line
+
     const weight = parseFloat(document.getElementById('weight').value);
     const weightUnit = document.getElementById('weight-unit').value;
     const exercise = parseFloat(document.getElementById('exercise').value) || 0;
@@ -56,3 +58,8 @@ function calculateWaterIntake() {
     resultDiv.innerHTML = `Your daily water intake should be approximately <strong>${totalWaterLiters} liters</strong> (${totalWaterOunces} ounces).`;
     resultDiv.style.display = 'block';
 }
+
+// Ensure button click event is attached
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("button").addEventListener("click", calculateWaterIntake);
+});
